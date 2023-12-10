@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="483.0"
+            prefWidth="306.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.boxchat.ChatController">
+   <ListView fx:id="messageList" layoutY="71.0" prefHeight="358.0" prefWidth="306.0"
+             style="-fx-background-color: #ffffff;"/>
+   <Pane prefHeight="71.0" prefWidth="306.0" styleClass="title-no-corner" stylesheets="@../style.css">
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true"
+                 preserveRatio="true">
+         <Image url="@../icons/avt.png"/>
+      </ImageView>
+      <Label layoutX="76.0" layoutY="11.0" text="Friend">
+         <font>
+            <Font name="System Bold" size="16.0"/>
+         </font>
+      </Label>
+      <Label layoutX="76.0" layoutY="36.0" text="Đang hoạt động">
+         <graphic>
+            <ImageView fitHeight="10.0" fitWidth="10.0" pickOnBounds="true" preserveRatio="true">
+               <Image url="@../icons/on.png"/>
+            </ImageView>
+         </graphic>
+      </Label>
+      <Button layoutX="216.0" layoutY="16.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0"
+              styleClass="menu-item" stylesheets="@../style.css">
+         <graphic>
+            <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+               <Image url="@../icons/phone.png"/>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="249.0" layoutY="16.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0"
+              styleClass="menu-item" stylesheets="@../style.css">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <Image url="@../icons/facetime.png"/>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="282.0" layoutY="16.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0"
+              styleClass="menu-item" stylesheets="@../style.css">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <Image url="@../icons/exit.png"/>
+            </ImageView>
+         </graphic>
+      </Button>
+   </Pane>
+   <Pane layoutY="432.0" prefHeight="54.0" prefWidth="306.0" styleClass="container-dropshadow"
+         stylesheets="@../style.css">
+      <TextField fx:id="inputField" layoutX="13.0" layoutY="15.0" prefHeight="25.0" prefWidth="231.0"
+                 styleClass="search-box" stylesheets="@../style.css"/>
+      <Button fx:id="sendButton" layoutX="262.0" layoutY="15.0" mnemonicParsing="false" prefHeight="25.0"
+              prefWidth="25.0" styleClass="menu-item" stylesheets="@../style.css">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <Image url="@../icons/send.png"/>
+            </ImageView>
+         </graphic>
+      </Button>
+   </Pane>
+</AnchorPane>
